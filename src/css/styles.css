@@ -44,8 +44,8 @@ table {
     border-spacing: 0;
 }
 
-.wrapper {
-
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -54,7 +54,6 @@ h1 {
     line-height: 42px;
     text-align: center;
 }
-
 
 /* ------------------ Header ---------------------------- */
 
@@ -70,8 +69,8 @@ header {
     border-bottom: 1px solid #828282;
 }
 
-.header_item {
-    
+.header_item:not(:last-child) {
+    padding-right: 10px;
 }
 
 .header_item-text:hover,
@@ -110,11 +109,12 @@ main {
 }
 
 .main_home-name {
-    width: 30px;
+    
     font-family: 'Gilroy-Bold';
-    font-size: 47.3392px;
+    font-size: 48px;
     line-height: 59px;
     color: #070707;
+    padding-right: 10px;
 }
 
 .main_home-about {
@@ -122,17 +122,17 @@ main {
     font-size: 18px;
     line-height: 22px;
     color: #070707;
-    width: 160px;
 }
 
 .main_home-lang {
-    
-    padding-top: 40px;
     font-family: 'Gilroy-Bold';
     font-size: 16px;
     line-height: 20px;
-    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    transform: rotate(-90deg) translateY(65px);
     color: #828282;
+    width: 62px;
+    
 }
 
 .main_home-lang-eng.active,
@@ -161,10 +161,6 @@ main {
     padding-bottom: 107px;
 }
 
-.main_about-name {
-    
-}
-
 .main_about-text {
     font-family: 'Gilroy-Medium';
     font-size: 18px;
@@ -177,8 +173,9 @@ main {
 .main_skills {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: #FFFFFF;
-    margin: 91px auto 111px;
+    margin: 91px auto 30px;
     max-width: 65%;
 }
 
@@ -197,6 +194,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
@@ -207,6 +205,7 @@ main {
     justify-content: space-between;
     width: 166px;
     height: 206px;
+    padding-bottom: 80px;
 }
 
 .main_skills-program > img {
@@ -222,8 +221,104 @@ main {
     color: #828282;
 }
 
-.main_skills-program-star {
 
+
+.main_portfolio {
+    margin: 0 auto;
+    padding-top: 113px;
+    padding-bottom: 44px;
+    background: #F6F6F6;
+
+}
+
+
+.main_portfolio-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_portfolio-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 47px;
+    padding-bottom: 52px;
+    padding: 47px 30px 52px;
+}
+
+.main_portfolio-item > img {
+    min-width: 316px;
+    min-height: 173px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 46px;
+}
+
+.main_portfolio-item > a {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #070707;
+}
+
+
+.main_contacts {
+    background: #FFFFFF;
+    margin: 0 auto;
+    max-width: 400px;
+    padding-top: 114px;
+    padding-bottom: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_contacts-text > p {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.main_contacts-btn {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #070707;
+
+    border-radius: 21px;
+    width: 180px;
+    height: 42px;
+}
+
+.main_contacts-social {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 85px;
+    padding-bottom: 45px;
+    width: 100%;
+    
+}
+
+
+
+
+
+.main_contacts-bottom-text > p {
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
 }
 
 
@@ -232,3 +327,15 @@ main {
 /* ------------------ Footer ---------------------------- */
 
 /* ------------------ Footer END ---------------------------- */
+
+
+/* -------------------@media----------------------------- */
+@media (max-width: 550px) { 
+    .main_skills-programs-block {
+        justify-content: center;
+    }
+    .main_home-avatar {
+        content: url("../img/avatarLong.png");
+    }
+ }
+/* -------------------@media END----------------------------- */

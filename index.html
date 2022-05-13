@@ -9,25 +9,21 @@
     <title>Denis Novik</title>
 </head>
 <body>
-    <div class="wrapper">
         <header class="header">
             <ul class="header_list">
-                <li class="header_item active"><a class="header_item-text" href="#">Home</a></li>
-                <li class="header_item"><a class="header_item-text" href="#">About me</a></li>
-                <li class="header_item"><a class="header_item-text" href="#">Skills</a></li>
-                <li class="header_item"><a class="header_item-text" href="#">Portfolio</a></li>
-                <li class="header_item"><a class="header_item-text" href="#">Contacts</a></li>
+                <li class="header_item active"><a class="header_item-text" href="#home">Home</a></li>
+                <li class="header_item"><a class="header_item-text" href="#aboutMe">About me</a></li>
+                <li class="header_item"><a class="header_item-text" href="#skills">Skills</a></li>
+                <li class="header_item"><a class="header_item-text" href="#portfolio">Portfolio</a></li>
+                <li class="header_item"><a class="header_item-text" href="#contacts">Contacts</a></li>
             </ul>
         </header>
-
         <main class="main">
-            <div class="main_home">
+            <div id="home" class="main_home">
                 <div class="main_home-block">
-                    <div class="main_home-name">
-                        Denis Novik
-                    </div>
-                    <div class="main_home-about">UX | UI designer             
-                        24 years old, Minsk</div>
+                    <p class="main_home-name">Denis<br>Novik</p>
+                    <p class="main_home-about">UX | UI designer<br>             
+                        24 years old, Minsk</p>
                     <div class="main_home-lang">
                         <a class="main_home-lang-eng active">ENG</a>|
                         <a class="main_home-lang-ru">RU</a>
@@ -36,7 +32,7 @@
                 <img class="main_home-avatar" src="./src/img/avatar.svg">
             </div>
 
-            <div class="main_about">
+            <div id="aboutMe"  class="main_about">
                 <div class="main_about-wrapper">
                     <h1>About me</h1>
                     <div class="main_about-text">
@@ -54,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="main_skills">
+            <div id="skills" class="main_skills">
                 <div class="main_skills-text">
                     <h1>Skills</h1>
                     <p>I work in such programs as</p>
@@ -112,11 +108,66 @@
                 </div>
             </div>
 
-            <div class="main_portfolio">
-                123
+            <div id="portfolio" class="main_portfolio">
+                <h1>Portfolio</h1>
+                <div class="main_portfolio-items">
+                    <div class="main_portfolio-item">
+                        <img src="./src/img/FashionStore.svg">
+                        <a href="#">Online fashion store - Homepage</a>
+                    </div>
+                    <div class="main_portfolio-item">
+                        <img src="./src/img/Reebok.svg">
+                        <a href="#">Reebok Store - Concept</a>
+                    </div>
+                    <div class="main_portfolio-item">
+                        <img src="./src/img/Braun.png">
+                        <a href="#">Braun Landing Page - Concept</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacts" class="main_contacts">
+                <h1>Contacts</h1>
+                
+                <div class="main_contacts-text">
+                    <p>Want to know more or just chat?<br>
+                        You are welcome!</p>
+                </div>
+
+                <button class="main_contacts-btn">Send message</button>
+                
+                <ul class="main_contacts-social">
+                    <li>
+                        <a href="#" class="main_contacts-social-linked" target="_blank">
+                            <img src="./src/img/icon_LinkedIn.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="main_contacts-social-instagram" target="_blank">
+                            <img src="./src/img/icon_Instagram.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="main_contacts-social-behance" target="_blank">
+                            <img src="./src/img/icon_Behance.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="main_contacts-social-dribble" target="_blank">
+                            <img src="./src/img/icon_Dribble.svg">
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="main_contacts-bottom-text">
+                    <p>Like me on<br>
+                        LinkedIn, Instagram, Behance, Dribble
+                    </p>
+                </div>
+                
+
             </div>
         </main>
         <footer class="footer"></footer>
-    </div>
 </body>
 </html>
