@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper {
+
+}
+
+h1 {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+
+
+/* ------------------ Header ---------------------------- */
+
+header {
+    margin: 33px auto 40px;
+    max-width: 65%;
+}
+
+.header_list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #828282;
+}
+
+.header_item {
+    
+}
+
+.header_item-text:hover,
+.header_item.active > .header_item-text {
+    color: #070707;
+}
+
+.header_item-text {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    text-decoration: none;
+}
+
+/* ------------------ Header END ---------------------------- */
+
+/* ------------------ Main ---------------------------- */
+
+main {
+    /* margin: 33px auto;
+    max-width: 65%; */
+}
+
+.main_home {
+    margin: 33px auto 104px;
+    max-width: 65%;
+    margin-bottom: 104px;
+}
+
+.main_home-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.main_home-name {
+    width: 30px;
+    font-family: 'Gilroy-Bold';
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: #070707;
+}
+
+.main_home-about {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    width: 160px;
+}
+
+.main_home-lang {
+    
+    padding-top: 40px;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    transform: rotate(-90deg);
+    color: #828282;
+}
+
+.main_home-lang-eng.active,
+.main_home-lang-ru.active {
+    color: #070707;
+}
+
+.main_home-avatar {
+    width: 100%;
+    height: auto;
+}
+
+
+.main_about {
+    background: #F6F6F6;
+    text-align: center;
+}
+
+.main_about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 65%;
+    padding-top: 120px;
+    padding-bottom: 107px;
+}
+
+.main_about-name {
+    
+}
+
+.main_about-text {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    padding-top: 17px;
+    padding-bottom: 20px;
+}
+
+.main_skills {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    margin: 91px auto 111px;
+    max-width: 65%;
+}
+
+.main_skills-text > p {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    padding-top: 69px;
+    padding-bottom: 83px;
+    text-align: center;
+}
+
+
+.main_skills-programs-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.main_skills-program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 166px;
+    height: 206px;
+}
+
+.main_skills-program > img {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.main_skills-program > p {
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+
+.main_skills-program-star {
+
+}
+
+
+/* ------------------ Main END ---------------------------- */
+
+/* ------------------ Footer ---------------------------- */
+
+/* ------------------ Footer END ---------------------------- */
